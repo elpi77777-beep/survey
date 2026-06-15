@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Feedback Form</title>
+
+<style>
+  .rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.rating input[type="radio"]:checked + label {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+body{
+    font-family:Arial,sans-serif;
+    max-width:600px;
+    margin:40px auto;
+    padding:20px;
+}
+
+label{
+    display:block;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+select,textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 20px;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Feedback Form</h2>
+
+<form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+
+    <h3>ΠΩΣ ΠΕΡΑΣΑΤΕ ΣΤΗΝ ΕΞΟΔΟ ΣΑΣ?</h3>
+
+    <div class="rating">
+        <input type="radio" id="q1_1" name="Question 1" value="1" required><label for="q1_1">1</label>
+        <input type="radio" id="q1_2" name="Question 1" value="2"><label for="q1_2">2</label>
+        <input type="radio" id="q1_3" name="Question 1" value="3"><label for="q1_3">3</label>
+        <input type="radio" id="q1_4" name="Question 1" value="4"><label for="q1_4">4</label>
+        <input type="radio" id="q1_5" name="Question 1" value="5"><label for="q1_5">5</label>
+        <input type="radio" id="q1_6" name="Question 1" value="6"><label for="q1_6">6</label>
+        <input type="radio" id="q1_7" name="Question 1" value="7"><label for="q1_7">7</label>
+        <input type="radio" id="q1_8" name="Question 1" value="8"><label for="q1_8">8</label>
+        <input type="radio" id="q1_9" name="Question 1" value="9"><label for="q1_9">9</label>
+        <input type="radio" id="q1_10" name="Question 1" value="10"><label for="q1_10">10</label>
+    </div>
+
+    <h3>ΠΟΣΟ ΧΑΡΟΥΜΕΝΗ ΗΣΑΣΤΕ ΜΕ ΤΗΝ ΕΞΟΔΟ ΣΑΣ?</h3>
+
+    <div class="rating">
+        <input type="radio" id="q2_1" name="Question 2" value="1" required><label for="q2_1">1</label>
+        <input type="radio" id="q2_2" name="Question 2" value="2"><label for="q2_2">2</label>
+        <input type="radio" id="q2_3" name="Question 2" value="3"><label for="q2_3">3</label>
+        <input type="radio" id="q2_4" name="Question 2" value="4"><label for="q2_4">4</label>
+        <input type="radio" id="q2_5" name="Question 2" value="5"><label for="q2_5">5</label>
+        <input type="radio" id="q2_6" name="Question 2" value="6"><label for="q2_6">6</label>
+        <input type="radio" id="q2_7" name="Question 2" value="7"><label for="q2_7">7</label>
+        <input type="radio" id="q2_8" name="Question 2" value="8"><label for="q2_8">8</label>
+        <input type="radio" id="q2_9" name="Question 2" value="9"><label for="q2_9">9</label>
+        <input type="radio" id="q2_10" name="Question 2" value="10"><label for="q2_10">10</label>
+    </div>
+
+   <h3>ΠΟΣΟ ΠΙΕΣΜΕΝΗ ΝΙΩΣΑΤΕ ΣΤΗΝ ΕΞΟΔΟ ΣΑΣ?</h3>
+
+    <div class="rating">
+        <input type="radio" id="q2_1" name="Question 2" value="1" required><label for="q2_1">1</label>
+        <input type="radio" id="q2_2" name="Question 2" value="2"><label for="q2_2">2</label>
+        <input type="radio" id="q2_3" name="Question 2" value="3"><label for="q2_3">3</label>
+        <input type="radio" id="q2_4" name="Question 2" value="4"><label for="q2_4">4</label>
+        <input type="radio" id="q2_5" name="Question 2" value="5"><label for="q2_5">5</label>
+        <input type="radio" id="q2_6" name="Question 2" value="6"><label for="q2_6">6</label>
+        <input type="radio" id="q2_7" name="Question 2" value="7"><label for="q2_7">7</label>
+        <input type="radio" id="q2_8" name="Question 2" value="8"><label for="q2_8">8</label>
+        <input type="radio" id="q2_9" name="Question 2" value="9"><label for="q2_9">9</label>
+        <input type="radio" id="q2_10" name="Question 2" value="10"><label for="q2_10">10</label>
+    </div>
+
+    <h3>ΕΧΕΤΕ ΚΑΠΟΙΟ ΠΑΡΑΠΟΝΟ ΑΠΟ ΤΗΝ ΕΞΟΔΟ ΣΑΣ? ΑΝ ΝΑΙ, ΠΑΡΑΚΑΛΩ ΠΕΡΙΓΡΑΨΤΕ:</h3>
+    <textarea name="Comments" rows="5"></textarea>
+
+  <h3>ΘΑ ΞΑΝΑΒΓΑΙΝΑΤΕ?</h3>
+    <textarea name="Comments" rows="5"></textarea>
+
+    <button type="submit">Submit</button>
+
+  <input type="hidden" name="_next"
+       value="https://yourusername.github.io/survey/thankyou.html">
+</form>
+
+</body>
+</html>
